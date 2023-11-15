@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script>
+        !function (e, n, t, i, r, o) { function s(e) { if ("number" != typeof e) return e; var n = new Date; return new Date(n.getTime() + 1e3 * e) } var a = 4e3, c = "xnpe_async_hide"; function p(e) { return e.reduce((function (e, n) { return e[n] = function () { e._.push([n.toString(), arguments]) }, e }), { _: [] }) } function m(e, n, t) { var i = t.createElement(n); i.src = e; var r = t.getElementsByTagName(n)[0]; return r.parentNode.insertBefore(i, r), i } function u(e) { return "[object Date]" === Object.prototype.toString.call(e) } o.target = o.target || "https://api.exponea.com", o.file_path = o.file_path || o.target + "/js/exponea.min.js", r[n] = p(["anonymize", "initialize", "identify", "getSegments", "update", "track", "trackLink", "trackEnhancedEcommerce", "getHtml", "showHtml", "showBanner", "showWebLayer", "ping", "getAbTest", "loadDependency", "getRecommendation", "reloadWebLayers", "_preInitialize", "_initializeConfig"]), r[n].notifications = p(["isAvailable", "isSubscribed", "subscribe", "unsubscribe"]), r[n].segments = p(["subscribe"]), r[n]["snippetVersion"] = "v2.7.0", function (e, n, t) { e[n]["_" + t] = {}, e[n]["_" + t].nowFn = Date.now, e[n]["_" + t].snippetStartTime = e[n]["_" + t].nowFn() }(r, n, "performance"), function (e, n, t, i, r, o) { e[r] = { sdk: e[i], sdkObjectName: i, skipExperiments: !!t.new_experiments, sign: t.token + "/" + (o.exec(n.cookie) || ["", "new"])[1], path: t.target } }(r, e, o, n, i, RegExp("__exponea_etc__" + "=([\\w-]+)")), function (e, n, t) { m(e.file_path, n, t) }(o, t, e), function (e, n, t, i, r, o, p) { if (e.new_experiments) { !0 === e.new_experiments && (e.new_experiments = {}); var l, f = e.new_experiments.hide_class || c, _ = e.new_experiments.timeout || a, g = encodeURIComponent(o.location.href.split("#")[0]); e.cookies && e.cookies.expires && ("number" == typeof e.cookies.expires || u(e.cookies.expires) ? l = s(e.cookies.expires) : e.cookies.expires.tracking && ("number" == typeof e.cookies.expires.tracking || u(e.cookies.expires.tracking)) && (l = s(e.cookies.expires.tracking))), l && l < new Date && (l = void 0); var d = e.target + "/webxp/" + n + "/" + o[t].sign + "/modifications.min.js?http-referer=" + g + "&timeout=" + _ + "ms" + (l ? "&cookie-expires=" + Math.floor(l.getTime() / 1e3) : ""); "sync" === e.new_experiments.mode && o.localStorage.getItem("__exponea__sync_modifications__") ? function (e, n, t, i, r) { t[r][n] = "<" + n + ' src="' + e + '"></' + n + ">", i.writeln(t[r][n]), i.writeln("<" + n + ">!" + r + ".init && document.writeln(" + r + "." + n + '.replace("/' + n + '/", "/' + n + '-async/").replace("><", " async><"))</' + n + ">") }(d, n, o, p, t) : function (e, n, t, i, r, o, s, a) { o.documentElement.classList.add(e); var c = m(t, i, o); function p() { r[a].init || m(t.replace("/" + i + "/", "/" + i + "-async/"), i, o) } function u() { o.documentElement.classList.remove(e) } c.onload = p, c.onerror = p, r.setTimeout(u, n), r[s]._revealPage = u }(f, _, d, n, o, p, r, t) } }(o, t, i, 0, n, r, e), function (e, n, t) { var i; e[n]._initializeConfig(t), (null === (i = t.experimental) || void 0 === i ? void 0 : i.non_personalized_weblayers) && e[n]._preInitialize(t), e[n].start = function (i) { i && Object.keys(i).forEach((function (e) { return t[e] = i[e] })), e[n].initialize(t) } }(r, n, o) }(document, "exponea", "script", "webxpClient", window, {
+            target: "https://cloud-api.exponea.com",
+            token: "95ae7664-77d3-11ee-8da0-7ae8a4ebbf7a",
+            new_experiments: {
+                hide_class: "xnpe_async_hide",
+                mode: "sync",
+                timeout: 4000,
+            },
+            // replace with current customer ID or leave commented out for an anonymous customer
+            // customer: window.currentUserId,
+        });
+        exponea.start();
+    </script>
+</head>
+
+<body>
+    <h1>Places</h1>
+    <p>You are on the subpage with the snippet and with an experiment. If this experiment is applied, I am green
+        &#127793.</p>
+    <a href="./index.html">Go home</a>
+    <p>
+    <div class="img_container">
+        <img src="img/mercantour.jpg" alt="mercantour" />
+    </div>
+    <p>
+        Mercantour National Park (French: Parc national du Mercantour) a French national park located in the
+        Alpes-de-Haute-Provence and Alpes-Maritimes departments. Since it was created in 1979, the park has proven
+        popular, with 800,000 visitors annually enjoying the 600 km (372 mi) of marked footpaths and visiting its
+        villages. (source: Wikipedia)
+    </p>
+    <div class="img_container">
+        <img src="img/alps.jpg" alt="alps" />
+    </div>
+    <p>
+        The English word Alps comes from the Latin Alpes.<br>
+
+        The Latin word Alpes could possibly come from the adjective albus[7] ("white"), or could possibly come from the
+        Greek goddess Alphito, whose name is related to alphita, the "white flour"; alphos, a dull white leprosy; and
+        finally the Proto-Indo-European word *albʰós. Similarly, the river god Alpheus is also supposed to derive from
+        the Greek alphos and means whitish.<br>
+
+        In his commentary on the Aeneid of Vergil, the late fourth-century grammarian Maurus Servius Honoratus says that
+        all high mountains are called Alpes by Celts.<br>
+
+        According to the Oxford English Dictionary, the Latin Alpes might derive from a pre-Indo-European word *alb
+        "hill"; "Albania" is a related derivation. Albania, a name not native to the region known as the country of
+        Albania, has been used as a name for several mountainous areas across Europe.<br>
+
+        In Roman times, "Albania" was a name for the eastern Caucasus, while in the English languages "Albania" (or
+        "Albany") was occasionally used as a name for Scotland,[10] although it is more likely derived from the Latin
+        word albus, the colour white.(source: Wikipedia)
+    </p>
+    <div class="img_container">
+        <img src="img/brno.jpg" alt="brno" class="high" />
+    </div>
+    <p>
+        Brno (/ˈbɜːrnoʊ/ BUR-noh,[5] Czech: [ˈbr̩no] ⓘ; German: Brünn [bʁʏn] ⓘ) is a city in the South Moravian Region
+        of the Czech Republic. Located at the confluence of the Svitava and Svratka rivers, Brno has about 390,000
+        inhabitants, making it the second-largest city in the Czech Republic after the capital, Prague, and one of the
+        100 largest cities of the EU. The Brno metropolitan area has almost 700,000 inhabitants.
+    </p>
+</body>
+
+</html>
